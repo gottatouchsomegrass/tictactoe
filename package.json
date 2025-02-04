@@ -1,0 +1,28 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gottatouchsomegrass/tictactoe.git"
+  },
+  "keywords": [
+    "tictactoe",
+    "game"
+  ],
+  "author": "gottatouchsomegrass",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gottatouchsomegrass/tictactoe/issues"
+  },
+  "homepage": "https://github.com/gottatouchsomegrass/tictactoe#readme",
+  "description": "A simple tic-tac-toe game",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.3",
+    "tailwindcss": "^4.0.3"
+  }
+}
