@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./main.css" rel="stylesheet" />
+  </head>
+  <body class="text-white bg-black">
+    <div id="page" class="flex flex-col justify-center h-screen m-auto">
+      <div class="text-center">
+        <h1 class="mb-4 text-3xl font-bold">Tic-Tac-Toe</h1>
+
+        <div>
+          <div class="grid w-64 grid-cols-3 gap-2 mx-auto">
+            <button
+              class="w-20 h-20 text-5xl font-bold text-black bg-white border-2 border-gray-400 hover:bg-gray-200 checkbox"
+            ></button>
+            <button
+              class="w-20 h-20 text-5xl font-bold text-black bg-white border-2 border-gray-400 hover:bg-gray-200 checkbox"
+            ></button>
+            <button
+              class="w-20 h-20 text-5xl font-bold text-black bg-white border-2 border-gray-400 hover:bg-gray-200 checkbox"
+            ></button>
+            <button
+              class="w-20 h-20 text-5xl font-bold text-black bg-white border-2 border-gray-400 hover:bg-gray-200 checkbox"
+            ></button>
+            <button
+              class="w-20 h-20 text-5xl font-bold text-black bg-white border-2 border-gray-400 hover:bg-gray-200 checkbox"
+            ></button>
+            <button
+              class="w-20 h-20 text-5xl font-bold text-black bg-white border-2 border-gray-400 hover:bg-gray-200 checkbox"
+            ></button>
+            <button
+              class="w-20 h-20 text-5xl font-bold text-black bg-white border-2 border-gray-400 hover:bg-gray-200 checkbox"
+            ></button>
+            <button
+              class="w-20 h-20 text-5xl font-bold text-black bg-white border-2 border-gray-400 hover:bg-gray-200 checkbox"
+            ></button>
+            <button
+              class="w-20 h-20 text-5xl font-bold text-black bg-white border-2 border-gray-400 hover:bg-gray-200 checkbox"
+            ></button>
+          </div>
+        </div>
+
+        <!-- 's turn -->
+        <div id="turn" class="mt-4 text-l"></div>
+
+        <!-- result -->
+        <div id="result" class="mt-6 text-xl"></div>
+
+        <!-- reset btn -->
+        <button
+          id="reset"
+          class="px-4 py-2 mt-4 text-white bg-blue-400 rounded-lg shadow-md hover:bg-blue-700"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
