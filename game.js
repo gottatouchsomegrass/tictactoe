@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
         return currentPlayer;
       }
     }
+    if (game.every((i) => i !== "")) {
+      return "draw";
+    }
     return null;
   };
 
@@ -29,9 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
         game[i] = currentPlayer;
         c.innerHTML = currentPlayer;
         if (checkWinner()) {
-          document.querySelector(
-            "#turn"
-          ).innerHTML = `Player ${currentPlayer} wins!`;
+          if (checkWinner() === "draw") {
+            document.querySelector("#turn").innerHTML = "It's a draw!";
+          } else {
+            document.querySelector(
+              "#turn"
+            ).innerHTML = `Player ${checkWinner()} wins!`;
+          }
         } else {
           currentPlayer = currentPlayer === "X" ? "O" : "X";
           document.querySelector(
